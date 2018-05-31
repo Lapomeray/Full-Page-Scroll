@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>One Page Scroll</title>
+
+  <!-- Required Links -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+
+
+  <style>
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+      }
+
+      .wrapper {
+      	height: 100% !important;
+      	height: 100%;
+      	margin: 0 auto;
+      	overflow: hidden;
+      }
+
+  	</style>
+
+
+  <script>
+  	  $(document).ready(function(){
+        $(".main").onepage_scroll({
+          sectionContainer: "section",
+          easing: "ease",
+          //Change Animation time between slides when scrolling
+          animationTime: 800,
+          responsiveFallback: false,
+          //Change to true if you want your first slide to appear when user scrolls past first slide
+          loop: false
+        });
+  		});
+
+  	</script>
+
+
+
+</head>
+
+
+<body>
+  <div class="wrapper">
+	  <div class="main">
+
+      <section class="page1">
+
+        <h1>This is page One</h1>
+
+
+
+
+      </section>
+
+	    <section class="page2">
+
+
+        <h1>This is page Two</h1>
+
+
+
+
+      </section>
+
+	    <section class="page3">
+
+
+			<h1>This is page Three</h1>
+
+
+
+      </section>
+
+
+
+    </div>
+  </div>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
